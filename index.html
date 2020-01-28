@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Туристическое агенство</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body class='start'>
+
+    <!-- Заголовок  -->
+
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="лого"></div>
+        <div class="tm"> <span><i class="material-icons">access_time</i></span>
+            <span>9:00 - 18:00</span></div>
+        <div class="tel"><span><i class="material-icons">phone</i></span>
+            <span>+38 050 050 0505</span></div>
+        <div class="srh">
+            <form action="#">
+                <input type="search" name="n6" id="in6" list="mydata" autocomplete="off" placeholder="Поиск">
+                <datalist id="mydata">
+                    <option value="Испания" label="Канарские острова">
+                    <option value="Турция" label="Анталия">
+                    <option value="Египет" label="Хургада">
+                </datalist>
+                <button><i class="material-icons">search</i></button>
+            </form>
+
+        </div>
+    </header>
+
+    <!-- меню навигации -->
+
+    <nav>
+        <div><a href="#a1">О компании</a></div>
+        <div><a href="#a2">Наши туры</a></div>
+        <div><a href="#a3">Горящие путевки</a></div>
+        <div><a href="#a4">Контакт</a></div>
+    </nav>
+
+    <main>
+
+        <!-- видео -->
+
+        <section>
+            <video id="intro" preload="auto" width="100%">
+                <source src="media/anytour.mp4" type="video/mp4">
+                <source src="media/anytour.webm" type="video/webm">
+                <source src="media/anytour.ogv" type="video/ogg">
+
+                <p>Браузер не поддерживает видео. <a href="media/anytour.mp4">Скачать файл.</a> </p>
+            </video>
+            <script>
+                intro.muted = true;
+                intro.addEventListener('click', push);
+
+                function push() {
+
+                    if (!intro.paused && !intro.ended) intro.pause();
+                    else intro.play();
+                }
+
+            </script>
+        </section>
+
+        <!-- О компании -->
+
+        <section id="a1">
+            <h1>О компании<h1>
+        </section>
+
+        <section class="about">
+
+            <div>
+                <section>
+                    <img id="p1" class="fade" src="images/img1b.jpg">
+                </section>
+
+                <script type="text/javascript">
+                    let i = 1; var p = 7;
+
+                    function func() {
+                        if (++i > p) i = 1;
+
+                        p1.style.opacity = '0'
+                        setTimeout('pic()', 1000)
+
+                        pic = () => {
+                            p1.src = "images/img" + i + "b.jpg";
+                            p1.style.opacity = '1'
+                        }
+
+                        timerId = setTimeout('func();', 6000);
+                    }
+
+                    setTimeout('func();', 6000)
+
+                </script>
+            </div>
+
+            <div class="mytab">
+
+
+                <section>
+                    <h1>Откройте новые горизонты</h1>
+                </section>
+
+                <section class="tb1">
+                    <div id='id0' onclick="tab('id0',0)" class="colorOn">О компании</div>
+                    <div id='id1' onclick="tab('id1',1)">Почему выбирают нас</div>
+                    <div id='id2' onclick="tab('id2',2)">Наша миссия</div>
+                </section>
+
+                <section class="tb2">
+                    <div id="txt" class="fade">Мы - команда профессионалов в туризме с опытом работы более 10
+                        лет и опытом личных путешествий более чем в 45 странах мира. Офис компании
+                        в Акапулько стал третьим офисом сети наряду с офисами, открытыми ранее в
+                        Афинах и Лондоне. Мы знаем об отдыхе практически все, продолжая совершенствовать свои знания
+                        каждый год. Мы много путешествуем и открываем новые страны и маршруты, чтобы
+                        предложить их Вам.</div>
+                    <div class="btn"> <a href="#a1_1" id="lnk">Наша команда</a></div>
+                </section>
+            </div>
+        </section>
+
+        <section class="display">
+            <div><img src="images/trv1.jpg"></div>
+            <div><img src="images/trv1.jpg"></div>
+            <div><img src="images/trv1.jpg"></div>
+            <div><img src="images/trv1.jpg"></div>
+            <div><img src="images/trv1.jpg"></div>
+            <div><img src="images/trv1.jpg"></div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
