@@ -36,7 +36,7 @@ function tab(idn, s) {
     txt.style.opacity = 0;
     lnk.style.opacity = 0;
 
-    setTimeout(() => aboutSwitch(s), 300);
+    setTimeout(() => aboutSwitch(s), 400);
 }
 
 function aboutSwitch(index) {
