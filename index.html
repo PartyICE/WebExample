@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
-
 </head>
 
 <body class='start'>
@@ -40,10 +39,10 @@
     <!-- меню навигации -->
 
     <nav>
-        <div><a href="#a1">О компании</a></div>
-        <div><a href="#a2">Наши туры</a></div>
-        <div><a href="#a3">Горящие путевки</a></div>
-        <div><a href="#a4">Контакт</a></div>
+        <div><a href="#about">О компании</a></div>
+        <div><a href="#tours">Наши туры</a></div>
+        <div><a href="#ftours">Горящие путевки</a></div>
+        <div><a href="#contact">Контакт</a></div>
     </nav>
 
     <main>
@@ -73,7 +72,8 @@
 
         <!-- О компании -->
 
-        <section id="a1">
+        <p><a name="about"></a></p>
+        <section>
             <h1>О компании<h1>
         </section>
 
@@ -126,12 +126,13 @@
                         Афинах и Лондоне. Мы знаем об отдыхе практически все, продолжая совершенствовать свои знания
                         каждый год. Мы много путешествуем и открываем новые страны и маршруты, чтобы
                         предложить их Вам.</div>
-                    <div class="btn"><a href="#a1_1" id="lnk" class="fadeText">Наша команда</a></div>
+                    <div class="btn"><a href="#team" id="lnkbut" class="fadeText">Наша команда</a></div>
                 </section>
             </div>
         </section>
 
-        <section style="padding: 20px;">
+        <p><a name="tours"></a></p>
+        <section class="sectionTitle">
             <h1>Наши туры</h1>
         </section>
         <section class="display">
@@ -155,7 +156,8 @@
             </div>
         </section>
 
-        <section style="padding: 20px;">
+        <p><a name="ftours"></a></p>
+        <section class="sectionTitle">
             <h1>Горящие путёвки</h1>
         </section>
         <section>
@@ -172,7 +174,7 @@
                     <p class="trText">Бенидорм - это шумный курорт для пляжного отдыха. Расположенный на солнечной Коста
                         Бланке, город
                         является одним из оригинальных пляжных курортов.</p>
-                    <div class="btn"><a href="#a1_1" id="lnk">Купить за $790</a></div>
+                    <div class="btn"><a href="#">Купить за $790</a></div>
                 </div>
                 <div><img src="images/htour2.jpg" alt="Маврикий"></div>
                 <div>
@@ -185,11 +187,12 @@
                     <p class="trText">16 отзыв</p>
                     <p class="trText">Прекрасный и привлекательный остров Маврикий - идеальное место оттянуться после
                         сафари. Побалуйте себя восхитительными ароматами и песчаными пляжами.</p>
-                    <div class="btn"><a href="#a1_1" id="lnk">Купить за $890</a></div>
+                    <div class="btn"><a href="#">Купить за $890</a></div>
                 </div>
             </div>
         </section>
-        <section style="padding: 20px;">
+        <p><a name="team"></a></p>
+        <section class="sectionTitle">
             <h1>Наша команда</h1>
         </section>
         <section class="tourTeam">
@@ -219,13 +222,55 @@
             </div>
         </section>
 
-        <section>
+        <p><a name="contact"></a></p>
+        <section class="sectionTitle">
             <h1>Контакт</h1>
         </section>
+        <section>
+            <div id="map">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9c366420a71392bec76b294add9a3b9460f2728b0dea1708f39720967ea7212a&amp;width=100%25&amp;height=434&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+
+        <section class="sectionTitle">
+            <h1>Отправить сообщение</h1>
+        </section>
+        <form action="#">
+            <div class="feedback">
+                <p><input type="text" placeholder="Ваше имя" required></p>
+                <p><input type="email" placeholder="E-mail" required></p>
+                <p><input type="tel" placeholder="Телефон" required></p>
+                <p><textarea name="additionalText" id="" cols="30" rows="10" placeholder="Сообщение"></textarea></p>
+                <p><button type="submit">Отправить</button></p>
+            </div>
+        </form>
     </main>
 
     <footer>
-
+        <div class="footerMenu">
+            <div>
+                <p>
+                    <h3>КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                </p>
+                <p><i class="material-icons">phone</i>+38 050 050 0505</p>
+                <p><i class="material-icons">mail</i>info@demolink.org</p>
+                <p><i class="material-icons">near_me</i>Минск, пр. Победителей, 9</p>
+            </div>
+            <div>
+                <p>
+                    <h3>МЕНЮ САЙТА</h3>
+                </p>
+                <p><a href="#about">О компании</a></p>
+                <p><a href="#tours">Наши туры</a></p>
+                <p><a href="#ftours">Горящие путевки</a></p>
+                <p><a href="#team">Наша команда</a></p>
+            </div>
+            <div>
+                <a class="footerButton" href="#tours">Наши туры</a>
+                <p>@ 2019 Агенство путешествий</p>
+            </div>
+        </div>
     </footer>
 
 </body>

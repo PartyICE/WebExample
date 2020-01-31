@@ -202,6 +202,11 @@ h1 { text-align: center; font-size: 200%; }
       color: #333;
   }
 
+  .sectionTitle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
       .display{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -261,7 +266,8 @@ h1 { text-align: center; font-size: 200%; }
         grid-template-columns: repeat(2, 556px);
         gap: 50px;
         grid-auto-rows: 382px;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 265px;
       }
 
       .tour1 div{
@@ -283,6 +289,7 @@ h1 { text-align: center; font-size: 200%; }
       .tourTeam{
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
       }
 
       .tourTeam div{
@@ -306,4 +313,98 @@ h1 { text-align: center; font-size: 200%; }
         /* line-height: .9em; */
       }
 
+      #map {
+        width: 100%; 
+        height: 100%; 
+        padding: 0; 
+        margin: 0; 
+      }
+
+      .feedback{
+        display: grid;
+        margin-bottom: 40px;
+      }
+
+      .feedback p{
+        justify-self: center;
+      }
+
+      .feedback input{
+        width: 800px;
+        height: 40px;
+      }
+
+      .feedback textarea{
+        width: 800px;
+        height: 200px;
+        resize: none;
+      }
+
+      .feedback button{
+        outline: none;
+        width: 805px;
+        height: 50px;
+        border: 1px solid #ccc;
+        background-color: #399;
+        color: #fff;
+        font-size: 18px;
+        transition: .5s ease;
+        cursor: pointer;
+      }
+
+      .feedback button:hover{
+        background: #fff;
+        color: #333;
+      }
+
+      footer{
+        background: #033;
+      }
+
+      .footerMenu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        color: #fff
+      }
+
+      .footerMenu div{
+        margin-top: 25px;
+        margin-left: 50px;
+      }
+
+      .footerButton{
+        box-sizing: border-box;
+        display: block;
+        border: 1px solid rgb(31, 95, 95);
+        width: 180px;
+        height: 60px;
+        background: #399;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14pt;
+        text-align: center;
+        padding-top: 15px;
+        transition: .5s;
+        cursor: pointer;
+      }
+
+      .footerButton:hover{
+        background: #033;
+      }
+
+      .footerMenu div a{
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .footerMenu div i{
+        padding-right: 15px;
+        color: var(--icons-color)
+      }
+
+      .footerMenu div:nth-child(3){
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+      }
       

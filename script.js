@@ -6,7 +6,8 @@ let aboutItems = [
         Афинах и Лондоне. Мы знаем об отдыхе практически все, продолжая совершенствовать свои знания
         каждый год. Мы много путешествуем и открываем новые страны и маршруты, чтобы
         предложить их Вам.`,
-        label: 'Наша команда'
+        label: 'Наша команда',
+        anchor: 'team'
     },
     {
         text: `Мы гордимся тем, что наши клиенты (около 45% из них!) советуют нас своим
@@ -15,13 +16,15 @@ let aboutItems = [
         ваш отдых позитивным и незабываемым, стараемся обеспечить всем необходимым: документами, 
         страховками, дополнительной информацией и пр., чтобы Вы чувствовали себя уверенно во время
         подготовки и непосредственно в путешествии.`,
-        label: 'Горящие путёвки'
+        label: 'Горящие путёвки',
+        anchor: 'ftours'
     },
     {
         text: `Наша команда единомышленников – профессионалов, длительное время работающих в сфере туризма.
         За это время мы лично объездили большинство курортных стран, чтобы дать Вам самую правдивую
         и точную информацию об отдыхе и грамотно подобрать тот вариант, который подойдет именно Вам.`,
-        label: 'Контакты'
+        label: 'Контакты',
+        anchor: 'contact'
     }
 ]
 
@@ -31,10 +34,10 @@ function tab(idn, s) {
         item.setAttribute('class', 'colorOff')
     });
     elem = document.getElementById(idn)
-    elem.setAttribute('class', 'colorOn')
+    elem.setAttribute('class', 'colorOn');
     // aboutSwitch(s);
     txt.style.opacity = 0;
-    lnk.style.opacity = 0;
+    lnkbut.style.opacity = 0;
 
     setTimeout(() => aboutSwitch(s), 400);
 }
@@ -43,25 +46,28 @@ function aboutSwitch(index) {
     switch (index) {
         case 0: {
             txt.innerHTML = aboutItems[index].text;
-            lnk.innerHTML = aboutItems[index].label;
+            lnkbut.innerHTML = aboutItems[index].label;
+            lnkbut.href = `#${aboutItems[index].anchor}`
             txt.style.opacity = 1;
-            lnk.style.opacity = 1;
+            lnkbut.style.opacity = 1;
             break;
         }
 
         case 1: {
             txt.innerHTML = aboutItems[index].text;
-            lnk.innerHTML = aboutItems[index].label;
+            lnkbut.innerHTML = aboutItems[index].label;
+            lnkbut.href = `#${aboutItems[index].anchor}`
             txt.style.opacity = 1;
-            lnk.style.opacity = 1;
+            lnkbut.style.opacity = 1;
             break;
         }
 
         case 2: {
             txt.innerHTML = aboutItems[index].text;
-            lnk.innerHTML = aboutItems[index].label;
+            lnkbut.innerHTML = aboutItems[index].label;
+            lnkbut.href = `#${aboutItems[index].anchor}`
             txt.style.opacity = 1;
-            lnk.style.opacity = 1;
+            lnkbut.style.opacity = 1;
             break;
         }
     }
