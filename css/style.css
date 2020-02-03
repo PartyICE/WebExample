@@ -256,8 +256,8 @@ h1 { text-align: center; font-size: 200%; }
         grid-template-columns: repeat(2, 556px);
         gap: 50px;
         grid-auto-rows: 382px;
-        justify-content: flex-start;
-        margin-left: 265px;
+        justify-content: center;
+        /* margin-left: 265px; */
       }
 
       .tour1 div{
@@ -313,31 +313,34 @@ h1 { text-align: center; font-size: 200%; }
       .feedback{
         display: flex;
         margin-bottom: 40px;
+        grid-template-columns: 1fr;
         flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
       }
 
       .feedback p{
         justify-self: center;
+        max-width: 800px;
+        width:100%;
       }
 
       .feedback input{
-        max-width: 800px;
-        width: 100%;
+        width:100%;
         height: 40px;
       }
 
       .feedback textarea{
         width: 100%;
-        max-width: 800px;
         height: 200px;
         resize: none;
       }
 
       .feedback button{
         outline: none;
-        max-width: 805px;
         width: 100%;
         height: 50px;
         border: 1px solid #ccc;
@@ -406,6 +409,11 @@ h1 { text-align: center; font-size: 200%; }
 
       @media screen and (max-width: 1367px) {
 
+        .tb1{
+          display: flex;
+          flex-direction: column;
+        }
+
         header div {  
           justify-content: center;
         }
@@ -449,6 +457,12 @@ h1 { text-align: center; font-size: 200%; }
 
           .tourTeam{
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .tourTeam div{
+            justify-self: center;
           }
 
         .footerMenu{
