@@ -103,7 +103,7 @@ h1 { text-align: center; font-size: 200%; }
 
 .about { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(2, minmax(450px, 1fr));
     grid-auto-rows: 530px;
     grid-gap: 3px
 }  
@@ -260,6 +260,19 @@ h1 { text-align: center; font-size: 200%; }
         /* margin-left: 265px; */
       }
 
+      .tourImage{
+        max-width: 600px;
+        width:100%;
+      }
+
+      .tourImage img{
+        width:100%;
+      }
+
+      .tourDescription{
+        margin-bottom: 10px;
+      }
+
       .tour1 div{
         overflow: hidden;
       }
@@ -313,13 +326,10 @@ h1 { text-align: center; font-size: 200%; }
       .feedback{
         display: flex;
         margin-bottom: 40px;
-        grid-template-columns: 1fr;
         flex-direction: column;
-        margin-left: 10px;
-        margin-right: 10px;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        
       }
 
       .feedback p{
@@ -329,6 +339,7 @@ h1 { text-align: center; font-size: 200%; }
       }
 
       .feedback input{
+        max-width: 800px;
         width:100%;
         height: 40px;
       }
@@ -408,6 +419,37 @@ h1 { text-align: center; font-size: 200%; }
       }
 
       @media screen and (max-width: 1367px) {
+
+        .feedback input{
+          width: 98%;
+        }
+
+        .feedback textarea{
+          width: 98%;
+        }
+
+        .feedback{
+          margin: 10px 10px 10px 10px
+        }
+
+        .feedback button{
+          width: 100%;
+        }
+
+        .tour1{
+          display: flex;
+          flex-direction: column;
+          margin: 10px 10px 10px 10px;
+        }
+
+        .tour1 div{
+          align-items: center;
+        }
+
+        .about{
+          display: flex;
+          flex-direction: column;
+        }
 
         .tb1{
           display: flex;
