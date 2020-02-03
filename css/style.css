@@ -443,6 +443,10 @@ h1 { text-align: center; font-size: 200%; }
 
       @media screen and (max-width: 1367px) {
 
+        .topbutton{
+          display: none;
+        }
+
         .feedback input{
           width: 98%;
         }
